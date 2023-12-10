@@ -1,6 +1,14 @@
+*{
+    font-family: 'Playfair Display', serif;
+}
+
 body{
     position: relative;
 }
 body::-webkit-scrollbar{
     display: none;
+}
+
+#nav-span{
+ transform: translateX(150%);   
 }
