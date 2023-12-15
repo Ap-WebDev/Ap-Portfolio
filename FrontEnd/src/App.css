@@ -1,14 +1,59 @@
-*{
-    font-family: 'Playfair Display', serif;
+::root {
+  max-width: 1440px;
+}
+* {
+  font-family: "Playfair Display", serif;
 }
 
-body{
-    position: relative;
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
-body::-webkit-scrollbar{
-    display: none;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-#nav-span{
- transform: translateX(150%);   
+#nav-span {
+  transform: translateX(200%);
+}
+.ItemImgSpan::-webkit-scrollbar {
+  display: none;
+}
+
+.HomeMainDiv {
+  scroll-behavior: smooth;
+  height: calc(100vh - 5rem);
+}
+.HomeMainDiv::-webkit-scrollbar {
+  display: none;
+}
+.HeaderItems::-webkit-scrollbar {
+  display: none;
+}
+
+.BestSellScroll::-webkit-scrollbar {
+  display: none;
+}
+#scrollDiv::-webkit-scrollbar {
+  display: none;
+}
+#scrollDiv > div {
+  flex-shrink: 0;
+}
+
+.FillLogo {
+  display: none;
+}
+
+#LinkSocialMedia:hover {
+  > span {
+    > .FillLogo {
+        box-shadow: 5px 5px 5px 5px Cyan inset -5px -5px -5px ;
+      display: block;
+    }
+    > .LineLogo {
+      display: none;
+    }
+  }
 }
